@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Nick Wellner | Product Leader, Designer, and Educator">
+<meta name="keywords" content="Nick Wellner, UX Designer, Product Designer, Product Strategy, UX Researcher">
+<meta name="author" content="Nick Wellner">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+<main>
+	<div class="left-column left-column--cs">
+		<section id="section1" class="hero bg--light">
+			<div class="container">
+				<a class="back-button" href="index.html"><span>←</span>Home</a>
+				<h1>Payroll</h1>
+				<p>Launching a new payroll product.</p>
+				<img class="main-image" src="img/payroll-hero.png" />
+			</div>
+		</section>
+		<section class="container">
+			<h3>Summary</h3>
+			<ul>
+				<li>Designed and launched a new payroll product to increase conversions and PEPM</li>
+				<li>Designed experiences for admins and employees on our web and mobile apps</li>
+				<li>Coordinated feature development across three engineering teams</li>
+				<li>Collaborated cross-functionally to design the customer onboarding experience</li>
+			</ul>
+			<h3>Getting started</h3>
+			<p>In 2022, When I Work wanted to expand into the payroll market. We hired a product manager with industry expertise. We started by defining our MVP features.</p>
+			<a class="button button--primary" target="_blank" href="https://docs.google.com/document/d/1f22fIs-CCn0Ll7pXrBqWJf4KgTgRVrkUVuUGtNq-abw/edit#heading=h.v147tnvwkfl5">View Features</a>
+			<p>We grouped our features into these initiatives:</p>
+			<ul id="section2">
+				<li>Managing user information (for admins)</li>
+				<li>Reviewing and submitting payroll (for admins)</li>
+				<li>Viewing pay information (for workers and admins)</li>
+			</ul>
+			<h3>Managing user information</h3>
+			<p>Adding Payroll meant adding more information about the users in the account, so we needed to update our User Details modal. Expanding the set of fields provided an opportunity to explore new ways to group and label everything.</p>
+			<div class="inline-figure">
+				<img src="img/payroll-user-fields.png" />
+				<div class="caption">Exploring new ways to group the full set of user data. <a target="_blank" href="img/payroll-user-fields.png">View larger</a></div>
+			</div>
+			<p class="margin-top-1">I designed two different architectures for the information, and we decided the second one would present all of the information more intuitively for users.</p>
+			<p id="section3">Some of the new fields went into existing tabs, and I added a new tab for payroll-specific information about each employee (e.g. bank accounts, tax withholdings).</p>
+			<a class="button button--primary display-wide" target="_blank" href="img/payroll-payroll-tab.png">View Payroll tab</a>
+			<div class="inline-figure">
+				<img src="img/payroll-payroll-tab.png" />
+				<div class="caption">New Payroll tab in the User Details modal. <a target="_blank" href="img/payroll-payroll-tab.png">View larger</a></div>
+			</div>
+			<h3>Reviewing and submitting</h3>
+			<p>When each pay period ends, our customers need to review and submit payroll. To design this experience, the PM and I started by listing all the data we could show users, then reduced it down to the essentials. We focused on the core figures people review when determining net pay.</p>
+			<p>I wanted the new UI displaying the information to feel instantly familiar, so I used several patterns from other When I Work views:</p>
+			<ul>
+				<li>A two-column layout with sidebar on the left</li>
+				<li>A table to organize the data and make it easy to scan</li>
+				<li>Clicking cells opened modals to edit or view more</li>
+				<li>A big green button in the sidebar for the main action</li>
+			</ul>
+			<p id="section4" class="margin-top-1">We ran customers through usability testing with our prototype, and made a few small tweaks based on their feedback.</p>
+			<div class="inline-figure">
+				<script src="https://fast.wistia.com/player.js" async></script>
+				<script src="https://fast.wistia.com/embed/h22tkxr1ys.js" async type="module"></script>
+				<style>wistia-player[media-id='h22tkxr1ys']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/h22tkxr1ys/swatch'); display: block; filter: blur(5px); padding-top:55.73%; }</style> 
+				<wistia-player media-id="h22tkxr1ys"></wistia-player>
+				<div class="caption">Demo of the review and submit flow.</div>
+			</div>
+			<h3>Viewing pay information</h3>
+			<p>The last big piece of the payroll experience was viewing pay information from the current pay period, and past paychecks. Up until this point we'd been creating functionality for admins, so it was nice to start thinking about the payroll experience for hourly workers.</p>
+			<div class="inline-figure">
+				<img src="img/payroll-hp-ideation.png" />
+				<div class="caption">Exploring how to present pay information to all users. <a target="_blank" href="img/payroll-hp-ideation.png">View larger</a></div>
+			</div>
+			<p class="margin-top-1">Most hourly workers used our mobile app exclusively, which already had views for timesheets and “worked vs scheduled” hours. Pay information added a third data source, and I thought there was an opportunity to combine them all into one experience that would more closely match the way workers think about earnings.</p>
+			<p id="section5">I designed an Hours & Pay area in the app, which took the place of timesheets in the nav bar. We tested our prototype, and one change that came out of it was including the “View Timesheets” button on the main view so users had easy access to the data the nav item used to link them to.</p>
+			<div class="inline-figure">
+				<script src="https://fast.wistia.com/player.js" async></script>
+				<script src="https://fast.wistia.com/embed/53ocaj4yvz.js" async type="module"></script>
+				<style>wistia-player[media-id='53ocaj4yvz']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/53ocaj4yvz/swatch'); display: block; filter: blur(5px); }</style> 
+				<wistia-player media-id="53ocaj4yvz" style="width: 407px;height: 800px; margin: 0 auto;"></wistia-player>
+				<div class="caption">Demo of the hours & pay flow.</div>
+			</div>
+			<h3>Customer onboarding</h3>
+			<p>We didn't have time to build a self-serve customer onboarding experience in the product, so we needed to do it manually. This process would involve our own support team, as well as Check's support team, who handled some of the more complex pieces of information.</p>
+			<p>To design the onboarding process, I worked with members of our support and engineering teams, and our partners at Check to define a process for:</p>
+			<ul>
+				<li>Collecting all of the necessary pieces of information</li>
+				<li>Facilitating hand-offs between When I Work and Check</li>
+				<li>Tracking status so the interface updated as customers hit milestones</li>
+			</ul>
+			<p class="margin-top-1">We started with a large spreadsheet documenting the information we needed to collect about the company and each user. From there, I created a diagram of a multi-step process and outlined what would happen at each step.</p>
+			<div class="inline-figure">
+				<img src="img/payroll-onboarding.png" />
+				<div class="caption">Flow diagram of our customer onboarding process. <a target="_blank" href="img/payroll-onboarding.png">View larger</a></div>
+			</div>
+			<p class="margin-top-1">Once we formalized the process with all stakeholders, I created the final documentation.</p>
+			<a class="button button--primary" target="_blank" href="img/payroll-onboarding-doc.png">View Documentation</a>
+			<h3>Impact</h3>
+			<p>In the first nine months following launch (Jan-Sep), we brought on 135 customers and generated more than $200k in revenue.</p> 
+			<p>Since launch we've continued to add the features needed for product/market fit, and built a funnel to capture the feedback our sellers are hearing from customers.</p>
+		</section>
+		<section class="next-case">
+			<div class="container">
+				<h3>Where to next?</h3>
+				<a class="fancy-link" href="hire.html">
+					Hire: Launching an applicant tracking product
+					<span class="link-arrow-container">
+						<span class="link-arrow">&#8594;</span>
+					</span>
+				</a>
+				<a class="fancy-link" href="index.html">
+					Home
+					<span class="link-arrow-container">
+						<span class="link-arrow">&#8594;</span>
+					</span>
+				</a>
+			</div>
+		</section>
+		<div class="scroll-hint">
+			<!-- Scroll for more
+			<span class="down-arrow">&#8964;</span> -->
+		</div>
+	</div>
+	
+	<div class="right-column image-viewer-container">
+		<div id="section-1" class="image-viewer is-visible">
+			<div class="container">
+				<img src="img/payroll-hero.png" />
+			</div>	
+		</div>
+		<div id="section-2" class="image-viewer">
+			<div class="container">
+				<img src="img/payroll-user-fields-crop.png" />
+				<div class="caption">Exploring how to present pay information to all users. <a target="_blank" href="img/payroll-hp-ideation.png">View full image</a></div>
+			</div>
+		</div>
+		<div id="section-3" class="image-viewer">
+			<div class="container">
+				<script src="https://fast.wistia.com/player.js" async></script>
+				<script src="https://fast.wistia.com/embed/h22tkxr1ys.js" async type="module"></script>
+				<style>wistia-player[media-id='h22tkxr1ys']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/h22tkxr1ys/swatch'); display: block; filter: blur(5px); padding-top:55.63%; }</style>
+				<wistia-player media-id="h22tkxr1ys"></wistia-player>
+				<div class="caption">Demo of the review and submit flow.</div>
+			</div>
+		</div>
+		<div id="section-4" class="image-viewer">
+			<div class="container">
+				<script src="https://fast.wistia.com/player.js" async></script>
+				<script src="https://fast.wistia.com/embed/53ocaj4yvz.js" async type="module"></script>
+				<style>wistia-player[media-id='53ocaj4yvz']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/53ocaj4yvz/swatch'); display: block; filter: blur(5px); }</style> 
+				<wistia-player media-id="53ocaj4yvz" style="width: 407px;height: 800px; margin: 0 auto;"></wistia-player>
+				<div class="caption">Demo of the hours & pay flow.</div>
+			</div>
+		</div>
+		<div id="section-5" class="image-viewer">
+			<div class="container">
+				<img src="img/payroll-onboarding.png" />
+				<div class="caption">Flow diagram of our customer onboarding process. <a target="_blank" href="img/payroll-onboarding.png">View larger</a></div>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+</html>
