@@ -38,25 +38,25 @@
 			<p>In 2022, When I Work wanted to expand into the payroll market. We hired a product manager with industry expertise. We started by defining our MVP features.</p>
 			<a class="button button--primary" target="_blank" href="https://docs.google.com/document/d/1f22fIs-CCn0Ll7pXrBqWJf4KgTgRVrkUVuUGtNq-abw/edit#heading=h.v147tnvwkfl5">View Features</a>
 			<p>We grouped our features into these initiatives:</p>
-			<ul id="section2">
+			<ul>
 				<li>Managing user information (for admins)</li>
 				<li>Reviewing and submitting payroll (for admins)</li>
 				<li>Viewing pay information (for workers and admins)</li>
 			</ul>
-			<h3>Managing user information</h3>
-			<p>Adding Payroll meant adding more information about the users in the account, so we needed to update our User Details modal. Expanding the set of fields provided an opportunity to explore new ways to group and label everything.</p>
+			<h3 id="section2">Managing user information</h3>
+			<p>Adding Payroll to your When I Work account meant adding more information about the users in the account, so we needed to update our User Details form. Expanding the set of fields provided an opportunity to explore new ways to group and label everything.</p>
 			<div class="inline-figure">
 				<img src="img/payroll-user-fields.png" />
 				<div class="caption">Exploring new ways to group the full set of user data. <a target="_blank" href="img/payroll-user-fields.png">View larger</a></div>
 			</div>
-			<p class="margin-top-1">I designed two different architectures for the information, and we decided the second one would present all of the information more intuitively for users.</p>
-			<p id="section3">Some of the new fields went into existing tabs, and I added a new tab for payroll-specific information about each employee (e.g. bank accounts, tax withholdings).</p>
+			<p class="margin-top-1">I designed two information architectures for the new data set, and decided the second one would present all of the information more intuitively for users.</p>
+			<p>Some of the new fields went into existing tabs, and I added a new tab for payroll-specific information about each employee (e.g. bank accounts, tax withholdings).</p>
 			<a class="button button--primary display-wide" target="_blank" href="img/payroll-payroll-tab.png">View Payroll tab</a>
 			<div class="inline-figure">
 				<img src="img/payroll-payroll-tab.png" />
 				<div class="caption">New Payroll tab in the User Details modal. <a target="_blank" href="img/payroll-payroll-tab.png">View larger</a></div>
 			</div>
-			<h3>Reviewing and submitting</h3>
+			<h3 id="section3">Reviewing and submitting</h3>
 			<p>When each pay period ends, our customers need to review and submit payroll. To design this experience, the PM and I started by listing all the data we could show users, then reduced it down to the essentials. We focused on the core figures people review when determining net pay.</p>
 			<p>I wanted the new UI displaying the information to feel instantly familiar, so I used several patterns from other When I Work views:</p>
 			<ul>
@@ -65,7 +65,7 @@
 				<li>Clicking cells opened modals to edit or view more</li>
 				<li>A big green button in the sidebar for the main action</li>
 			</ul>
-			<p id="section4" class="margin-top-1">We ran customers through usability testing with our prototype, and made a few small tweaks based on their feedback.</p>
+			<p class="margin-top-1">We ran customers through usability testing with our prototype, and made a few small tweaks based on their feedback.</p>
 			<div class="inline-figure">
 				<script src="https://fast.wistia.com/player.js" async></script>
 				<script src="https://fast.wistia.com/embed/h22tkxr1ys.js" async type="module"></script>
@@ -73,14 +73,14 @@
 				<wistia-player media-id="h22tkxr1ys"></wistia-player>
 				<div class="caption">Demo of the review and submit flow.</div>
 			</div>
-			<h3>Viewing pay information</h3>
+			<h3 id="section4">Viewing pay information</h3>
 			<p>The last big piece of the payroll experience was viewing pay information from the current pay period, and past paychecks. Up until this point we'd been creating functionality for admins, so it was nice to start thinking about the payroll experience for hourly workers.</p>
 			<div class="inline-figure">
 				<img src="img/payroll-hp-ideation.png" />
 				<div class="caption">Exploring how to present pay information to all users. <a target="_blank" href="img/payroll-hp-ideation.png">View larger</a></div>
 			</div>
 			<p class="margin-top-1">Most hourly workers used our mobile app exclusively, which already had views for timesheets and “worked vs scheduled” hours. Pay information added a third data source, and I thought there was an opportunity to combine them all into one experience that would more closely match the way workers think about earnings.</p>
-			<p id="section5">I designed an Hours & Pay area in the app, which took the place of timesheets in the nav bar. We tested our prototype, and one change that came out of it was including the “View Timesheets” button on the main view so users had easy access to the data the nav item used to link them to.</p>
+			<p>I designed an Hours & Pay area in the app, which took the place of timesheets in the nav bar. We tested our prototype, and one change that came out of it was including the “View Timesheets” button on the main view so users had easy access to the data the nav item used to link them to.</p>
 			<div class="inline-figure">
 				<script src="https://fast.wistia.com/player.js" async></script>
 				<script src="https://fast.wistia.com/embed/53ocaj4yvz.js" async type="module"></script>
@@ -88,7 +88,7 @@
 				<wistia-player media-id="53ocaj4yvz" style="width: 100%;height: auto; margin: 0 auto; max-width: 400px;"></wistia-player>
 				<div class="caption">Demo of the hours & pay flow.</div>
 			</div>
-			<h3>Customer onboarding</h3>
+			<h3 id="section5">Customer onboarding</h3>
 			<p>We didn't have time to build a self-serve customer onboarding experience in the product, so we needed to do it manually. This process would involve our own support team, as well as Check's support team, who handled some of the more complex pieces of information.</p>
 			<p>To design the onboarding process, I worked with members of our support and engineering teams, and our partners at Check to define a process for:</p>
 			<ul>
@@ -110,12 +110,12 @@
 		<section class="next-case">
 			<div class="container">
 				<h3>Where to next?</h3>
-				<!-- <a class="fancy-link" href="hire.html">
+				<a class="fancy-link" href="hire.html">
 					Hire: Launching an applicant tracking product
 					<span class="link-arrow-container">
 						<span class="link-arrow">&#8594;</span>
 					</span>
-				</a> -->
+				</a>
 				<a class="fancy-link" href="index.html">
 					Home
 					<span class="link-arrow-container">

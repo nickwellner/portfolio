@@ -144,10 +144,14 @@ h3 {
 	font-family: "DM Serif Text", serif;
 	font-size: 1.75em;
 	font-weight: 400;
-	margin: 2em 0 0.5em;
+	margin: 0 0 0.5em;
+	padding-top: 2em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
+	body {
+		font-size: 20px;
+	}
 	h1 {
 		font-size: 3.5em;
 		line-height: 1em;
@@ -160,6 +164,7 @@ h3 {
 	h3 {
 		font-size: 1.75em;
 		line-height: 1em;
+		padding-top: 3em;
 	}
 }
 
@@ -328,13 +333,14 @@ LAYOUT
 
 @media (min-width: 1000px) {
 	.container {
+		width: 78%;
 		max-width: 980px;
 	}
 
 	.left-column {
 		float: left;
 		height: 100vh;
-		width: 33%;
+		width: 37%;
 		text-align: left;
 		background: #EFF5F2;
 		position: relative;
@@ -353,8 +359,9 @@ LAYOUT
 		top: 0;
 		right: 0;
 		bottom: 0;
-		width: 67%;
+		width: 63%; /* Don't forget to update .image-viewer offset to match */
 		background: white;
+		
 	}
 
 	.display-wide {
@@ -561,7 +568,7 @@ IMAGE VIEWER
 		position: fixed;
 		top: 0;
 		right: 0;
-		left: 33%;
+		left: 37%;
 		bottom: 0;
 		height: auto;
 		transition: opacity 0.5s ease;
@@ -643,7 +650,7 @@ FOOTER LINKS
 
 .footer-link.document,
 .footer-link.document:visited {
-	padding: 0.25em 0.375em;
+	padding: 0.25em 0.5em 0.25em 0.375em;
 	color: #5F977F;
 	border: 1px solid #5F977F;
 	border-radius: 3px;
@@ -720,5 +727,9 @@ FOOTER LINKS
 		display: block;
 		position: absolute;
 		bottom: 1.5em;
+	}
+
+	.footer-link.document svg {
+		top: -4px;
 	}
 }
